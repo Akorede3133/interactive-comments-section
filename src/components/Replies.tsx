@@ -4,9 +4,11 @@ import minus from '../../src/assets/images/icon-minus.svg';
 import reply from '../../src/assets/images/icon-reply.svg';
 import del from '../../src/assets/images/icon-delete.svg';
 import edit from '../../src/assets/images/icon-edit.svg';
+import amy from '../../src/assets/images/avatars/image-amyrobson.webp';
 import Comments from './Comments'
 import SingleComment from './SingleComment'
-import data from '../utils/data.json';
+import data from '../../public/data.json';
+
 import { repliesProp } from './Comments';
 import CommentBox from './CommentBox';
 import EditResponse from './EditResponse';
@@ -23,7 +25,7 @@ const Replies = ({ id, user, content, createdAt, score, replyingTo}: repliesProp
      <section className='ml-4 md:ml-10 bg-white rounded-md p-4 md:w-[95%] md:relative grid gap-8'>
        <article className='md:px-10'>
           <section className='flex items-center gap-2'>
-              <img src={user.image.png} alt="" className='w-[40px] h-[40px]'/>
+              <img src={amy} alt="" className='w-[40px] h-[40px]'/>
               <p className='font-medium'>{user.username}</p>
               <span className='text-neutral-dark-blue'>{createdAt}</span>
           </section>

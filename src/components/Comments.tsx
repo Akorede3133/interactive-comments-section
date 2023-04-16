@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import SingleComment from './SingleComment';
 import amy from '../../src/assets/images/avatars/image-amyrobson.webp';
-import data from '../utils/data.json';
+import data from '../../public/data.json';
 import Replies from './Replies';
 interface imageProp {
   png: string;

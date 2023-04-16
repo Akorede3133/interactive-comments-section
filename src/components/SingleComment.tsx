@@ -4,6 +4,7 @@ import minus from '../../src/assets/images/icon-minus.svg';
 import reply from '../../src/assets/images/icon-reply.svg';
 import delIcon from '../../src/assets/images/icon-delete.svg';
 import edit from '../../src/assets/images/icon-edit.svg';
+import amy from '../../src/assets/images/avatars/image-amyrobson.webp';
 import Replies from './Replies';
 import { commentProp } from './Comments';
 import CommentBox from './CommentBox';
@@ -17,7 +18,7 @@ const SingleComment= ({id, createdAt, content, score, user, replies}: commentPro
         <section className='bg-white rounded-md p-4 w-full md:relative grid gap-8'>
         <article className='md:px-10'>
             <section className='flex items-center gap-2'>
-                <img src={user.image.webp} alt="" className='w-[40px] h-[40px]'/>
+                <img src={amy} alt="" className='w-[40px] h-[40px]'/>
                 <p className='font-medium'>{user.username}</p>
                 <span className='text-neutral-dark-blue'>{createdAt}</span>
             </section>
